@@ -4,7 +4,7 @@ import { Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
-import BookBtn from "../../components/BookBtn";
+import BookButton from "../../components/BookButton";
 
 class Saved extends Component {
     state = {
@@ -93,7 +93,7 @@ class Saved extends Component {
                                     </p>
                                 </div>
                                 <div className="book-btn-div">
-                                    <BookBtn
+                                    <BookButton
                                         key={book._id + "btn"}
                                         btntype="info"
                                         id={book._id}
@@ -101,7 +101,7 @@ class Saved extends Component {
                                         onClick={() => this.deleteBook(book._id)}
                                     >
                                         Delete
-                </BookBtn>
+                </BookButton>
                                 </div>
                             </ListItem>
                         ))}

@@ -7,4 +7,7 @@ export function BookButton(props) {
             {props.children}
         </button>
 
+    );
 }
+
+export default BookButton;

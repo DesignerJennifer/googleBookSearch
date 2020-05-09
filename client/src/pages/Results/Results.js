@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import { Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
-import BookBtn from "../../components/BookBtn";
+import BookButton from "../../components/BookButton";
 import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
 
@@ -92,7 +92,7 @@ class Results extends Component {
                                     </p>
                                 </div>
                                 <div className="book-btn-div">
-                                    <BookBtn
+                                    <BookButton
                                         key={"" + book.id + index}
                                         btntype="info"
                                         disabled={book.volumeInfo.infoLink === "/"}
@@ -106,7 +106,7 @@ class Results extends Component {
                                         })}
                                     >
                                         Save
-                  </BookBtn>
+                  </BookButton>
                                 </div>
                             </ListItem>
                         ))}
