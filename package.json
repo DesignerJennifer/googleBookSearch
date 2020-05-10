@@ -1,7 +1,10 @@
 {
   "name": "googlebooks",
   "version": "1.0.0",
-  "description": "",
+  "description": "Google search list for books and then saving them to a list of books to read",
+  "engines": {
+    "node": "12.16.x"
+  },
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
