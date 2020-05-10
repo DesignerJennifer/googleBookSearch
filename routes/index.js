@@ -16,6 +16,12 @@ function apiRoutes(app) {
         });
     });
 
+    app.get("/api/books", function (req, res) {
+        db.Book.find().then(function (results) {
+            res.json(results)
+        });
+    });
+
 
     // delete method here
     app.delete("/api/books/:id", function (req, res) {

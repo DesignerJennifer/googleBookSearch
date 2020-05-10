@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import Jumbotron from "../../components/Jumbotron";
-import API from "../../utils/API";
+import API from "./../../utils/API";
 import BookButton from "../../components/BookButton";
 
 class Saved extends Component {
@@ -18,7 +18,7 @@ class Saved extends Component {
     }
 
     getSavedBooks = () => {
-        API.getSavedBooks()
+        API.getBooks()
             .then(res => {
                 if (res.data.length > 0) {
                     this.setState({
@@ -47,7 +47,7 @@ class Saved extends Component {
                 <div>
                     <Jumbotron>
                         <h1 className="display-4">(React) Google Books Search</h1>
-                        <p className="lead">Search for and annotate books of interest.</p>
+                        <p className="lead">Search for books.</p>
                         <hr className="my-4" />
                         <p className="lead">
                             <Link className="btn btn-default btn-lg" to="/" role="button">New Search</Link>

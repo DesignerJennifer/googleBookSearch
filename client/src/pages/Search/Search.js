@@ -25,7 +25,7 @@ class Search extends Component {
 
             const title = this.state.title.trim();
 
-            API.apiRoutes(title)
+            API.searchBooks(title)
                 .then(res => {
 
                     console.log(res.data.items);
