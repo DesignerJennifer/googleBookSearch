@@ -16,7 +16,7 @@ routes(app);
 
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist"
+  process.env.MONGODB_URI || "mongodb://localhost/googlebooksearch"
 );
 
 // Start the API server
